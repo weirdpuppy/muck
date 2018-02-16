@@ -1,0 +1,23 @@
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+iframe {
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

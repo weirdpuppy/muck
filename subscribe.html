@@ -4,6 +4,8 @@
     <title>muck the comic</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/weirdpuppy/art/master/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="res/css/styles.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="lib/favicon_package_v0.16/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="lib/favicon_package_v0.16//favicon-32x32.png">
@@ -12,9 +14,6 @@
     <link rel="mask-icon" href="lib/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" type="text/css" href="res/css/styles.css">
-
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -27,14 +26,10 @@
 </head>
 
 <body>
-    <br />
-    <marquee>
-        <h4><em>updates sundays</em></h4>
-    </marquee>
     <div class="header-bar has-bg">
         <div class="content wrapper center">
 
-            <a href="about.html">about</a>
+            <a href="about.html" id="selected">about</a>
             <a href="archive.html">archive</a>
 
             <a href="index.html">
@@ -74,51 +69,37 @@
     </div>
 
     <div class="wrapper">
-        <div class="flex-container" id="comic-panel">
-            <div class="flex-item icon no-btn">
-                <a href="#">
-                    <i class="fas fa-chevron-circle-left"></i>
-                </a>
-            </div>
-            <div class="flex-item panel center">
-                <img src="/res/panels/img/v1-e1-cover.png" />
-            </div>
-
-            <div class="flex-item icon no-btn">
-                <a href="#">
-                    <i class="fas fa-chevron-circle-right"></i>
-                </a>
-            </div>
-        </div>
-        <br />
-        <div class="flex-container center">
-            <div class="flex-item icon no-btn">
-                <a href="#">
-                    <i class="fas fa-fast-backward"></i>
-                </a>
-            </div>
-            <div class="flex-item icon has-padding no-btn">
-                <a href="/index.html">
-                    <i class="fas fa-fast-forward"></i>
-                </a>
-            </div>
-        </div>
-        <br />
-        <div class="dropdown center">
-            <select id="dropdown"></select>
-        </div>
-        <br />
         <div class="comment-box center has-bg is-rounded">
-            <div class="flex-container" id="two-row">
-                <div class="flex-item">
-                    <h3>roxanne</h3>
-                </div>
-                <div class="flex-item">
-                    <h4>2/16/2018</h4>
-                </div>
-            </div>
-            <p>welcome to my comic. hope you like blood and heavy religious overtones 😀</p>
+            <h3>subscribe</h3>
 
+            <p>if you want to recieve a notification through your email everytime <b>MUCK</b> updates subscribe below: </p>
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup {
+                    clear: left;
+                    width: 100%;
+                }
+                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+            </style>
+            <div id="mc_embed_signup">
+                <form action="https://visuallyroxanne.us17.list-manage.com/subscribe/post?u=0bc2e0db411eb1151a8f66b0e&amp;id=2a7333c972" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0bc2e0db411eb1151a8f66b0e_2a7333c972" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+            <p>if email isn’t your jam, you can follow the comic on <a href="https://www.facebook.com/Muck-the-Comic-412070562584037/">facebook</a> or <a href="https://www.instagram.com/muckthecomic/">instagram</a>.</p>
+
+            <p>I hope to start a patreon once I have a few more panels up, so if you are interested in that sort of thing, check back soon!</p>
         </div>
 
     </div>

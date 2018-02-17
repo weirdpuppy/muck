@@ -1,23 +1,275 @@
+@import url("/lib/font-awesome-4.7.0/css/font-awesome.min.css");
+:root {
+    --header-color: #AD9F93;
+    --text-color: #C3B0A6;
+    --bg-color: rgba(155, 137, 119, .5);
+    --bg-matte: #594f49;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
 body {
     background-image: url("../img/bg.jpg");
     background-size: cover;
     background-position: center;
+    font-family: Helvetica Neue, Helvetica, 'Nunito', Arial, sans-serif;
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: .4px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.nav-btn {
+    font-size: 1.5em;
+    position: absolute;
+    top: 26px;
+    right: 0;
+    margin-right: 10px;
+    display: none;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    -webkit-animation: shake 1s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: shake 1s infinite;
+}
+
+#nav {
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+    position: fixed;
+    font-size: 21px;
+    position: absolute;
+    top: 0;
+    right: -9999px;
+}
+
+.has-shadow {
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    font-size: 1.5em;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#nav a>p {
+    color: var(--text-color);
+    padding: 10px 0px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
+    text-align: center;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+.nav-close {
+    font-size: 1.4em;
+    background-color: var(--bg-color);
+    width: 90%;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.nav-close:hover {
+    cursor: pointer;
+    -webkit-animation: shake 1s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: shake 1s infinite;
 }
 
 .wrapper {
-    width: 90%;
-    height: 100%;
+    width: 85%;
+    max-width: 900px;
+    position: relative;
     margin: 0 auto;
+}
+
+.header-bar {
+    height: 35px;
+    width: 100%;
+    margin-top: 45px;
+    position: relative;
+}
+
+.header-bar .content {
+    position: absolute;
+    top: 0;
+    margin-top: -44px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-bar .mobile-content {
+    display: none;
+    top: -20;
+}
+
+.header-bar a {
+    color: var(--header-color);
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.header-bar img {
+    width: 185px;
+    vertical-align: middle;
+}
+
+.comment-box {
+    width: 90%;
+    min-width: 500px;
+}
+
+#two-row>div {
+    width: 50%;
+}
+
+#two-row>div:nth-child(2) {
+    text-align: right;
+}
+
+.has-bg {
+    background-color: var(--bg-color);
+}
+
+.matte {
+    background-color: var(--bg-matte);
 }
 
 .center {
     margin: 0 auto;
+    width: fit-content;
 }
 
-iframe {
-    margin: 0 auto;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.panel {
+    margin: 35px auto;
+}
+
+.panel>img {
+    max-width: 600px;
+    width: 100%;
+}
+
+.is-rounded {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+h3,
+h4 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer {
+    padding: 90px 0px 20px 0px;
+}
+
+@media all and (max-width: 525px) {
+    body {
+        font-size: 14px;
+    }
+    .header-bar .content {
+        margin-top: -33px;
+    }
+    .header-bar a {
+        padding: 0px 3px;
+    }
+    .header-bar img {
+        width: 150px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .header-bar .content {
+        display: none;
+    }
+    .header-bar {
+        margin-bottom: 50px;
+    }
+    .header-bar .mobile-content {
+        margin-top: -25px;
+    }
+    .header-bar .mobile-content {
+        display: block;
+    }
+    .nav-btn {
+        display: block;
+    }
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes zoom-out {
+    from {
+        -webkit-transform: scale(1)
+    }
+    to {
+        -webkit-transform: scale(0)
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(0)
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }

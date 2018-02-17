@@ -173,6 +173,11 @@ hr {
     width: 100px;
 }
 
+.soc-med .icon {
+    font-size: 21px;
+    color: inherit;
+}
+
 .no-btn {
     visibility: hidden;
 }

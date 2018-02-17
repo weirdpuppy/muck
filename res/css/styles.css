@@ -99,6 +99,7 @@ a:hover {
     max-width: 900px;
     position: relative;
     margin: 0 auto;
+    margin-top: 40px;
 }
 
 .header-bar {
@@ -124,6 +125,16 @@ a:hover {
     top: -20;
 }
 
+#selected {
+    text-decoration: underline;
+}
+
+#selected:hover {
+    cursor: default;
+    font-size: 1em;
+
+}
+
 .header-bar a {
     color: var(--header-color);
     padding: 0px 10px;
@@ -135,16 +146,38 @@ a:hover {
     vertical-align: middle;
 }
 
+.profile-pic {
+    width: 120px;
+    padding-right: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    width: 50px;
+    border-color: var(--header-color);
+}
+
 .comment-box {
     width: 90%;
+    max-width: 400px;
+    padding: 20px 30px;
 }
 
 #two-row>div {
     width: 50%;
 }
 
+p>a {
+    font-style:italic;
+    font-weight: 400;
+}
+
 #two-row>div:nth-child(2) {
     text-align: right;
+    
 }
 
 .has-bg {
@@ -170,8 +203,7 @@ a:hover {
 }
 
 .is-rounded {
-    border-radius: 10px;
-    padding: 10px 20px;
+    border-radius: 5%;    
 }
 
 h3,

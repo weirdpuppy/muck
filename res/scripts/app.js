@@ -3,10 +3,10 @@
              "panelName": "episode 1 - cover ",
              "panelLink": "/res/panels/volume1/v1-e1-cover.html"
                 },
-        /* {
-            "panelName": "episode 1 - panel 1",
+         {
+             "panelName": "episode 1 - panel 1",
              "panelLink": "/res/panels/volume1/v1-e1-p1.html"
-                } */
+                }
          ]
  };
 

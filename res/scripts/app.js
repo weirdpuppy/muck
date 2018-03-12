@@ -10,6 +10,10 @@
          {
              "panelName": "episode 1 - panel 2",
              "panelLink": "/res/panels/volume1/v1-e1-p2.html"
+                },
+         {
+             "panelName": "episode 1 - panel 3",
+             "panelLink": "/res/panels/volume1/v1-e1-p3.html"
                 }
          ]
  };

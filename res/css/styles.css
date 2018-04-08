@@ -14,8 +14,8 @@
 
 body {
     background-image: url("../img/bg.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     font-family: Helvetica Neue, Helvetica, 'Nunito', Arial, sans-serif;
     margin: 0;
     font-size: 13px;
@@ -327,6 +327,9 @@ input#mc-embedded-subscribe {
     }
     .nav-btn {
         display: block;
+    }
+    body {
+        background-size: 100%;
     }
 }
 
